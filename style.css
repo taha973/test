@@ -1,0 +1,72 @@
+body {
+font-family: 'Poppins', sans-serif;
+}
+#h {
+text-align: center;
+}
+#c {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#c1 {
+margin-right: .7em;
+height: 3.6em;
+font-size: 1.2em;
+background-color: Transparent;
+border: 1px solid rgb(32, 30, 30);
+font-family: 'Poppins', sans-serif;
+color: rgb(79, 20, 241);
+font-weight: 500;
+cursor: pointer;
+position: absolute;
+}
+#c2 {
+font-size: 1.2em;
+height: 3.6em;
+background-color: Transparent;
+border: 1px solid rgb(70, 68, 68);
+font-family: 'Poppins', sans-serif;
+color: rgb(79, 20, 241);
+font-weight: 500;
+cursor: pointer;
+position: absolute;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
+ 
+
+ @-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+a {
+	width: 30px;
+	height: 30px;
+	border:solid 5px #8822aa;
+	border-radius: 50%;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	 -webkit-transition: all 0.5s ease-in;
+    -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         1.0s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+    	
+    	 transition: all 0.5s ease-in;
+    animation-name:             rotate; 
+    animation-duration:         1.0s; 
+    animation-iteration-count:  infinite;
+    animation-timing-function: linear; 
+}
